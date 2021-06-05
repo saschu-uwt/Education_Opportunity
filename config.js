@@ -64,7 +64,6 @@ var maplayers = {
 
 L.control.layers(maplayers).addTo(mymap);
 
-
 // Legend
 var Legend = L.control({position: 'bottomleft'});
 Legend.onAdd = function (mymap) {
