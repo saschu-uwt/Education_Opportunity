@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Educational Opportunity</title>
+		<link rel="stylesheet" href="styles.css" type="text/css"/>
+
+		<!-- the Leaflet CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"/>
+
+		<!-- the Leaflet JavaScript library -->
+		<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+		<!-- link to the JQuery library used to load GeoJSON files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- link to leaflet legend library, one of four steps to embed the legend -->
+		<script src= "https://cdn.jsdelivr.net/npm/leaflet-legend@1.0.2/leaflet-legend.min.js"></script>
+	</head>
+
+	<body>
+		<h1>Educational Opportunity in King County</h1>
+
+		<!-- code where we create and name the container that holds the map -->
+		<div id="map" style="height: 80%; margin-bottom:3em"></div>
+
+		<div class="flex-container">
+			<div>
+				<p>Educational Opportunity is an aggregate of five variables: reading test scores, math test scores, student poverty rates (reversed), teachers’ qualifications and graduation rates. These indicators represent the quality of local schools and educational resources.</p>
+			</div>
+			<div>
+				<p>With a possible exception in teachers’ qualifications, all educational variables show the urban areas of the I-5 corridor from Seattle through Kent are areas that could benefit the most from educational investment.<br><a href = "images/Education_Opportunity.pdf">Click here for the full report.</a></p>
+		 </div>
+
+		</div>
+
+		<p style="font-size:.7em; text-align:center">Data: <a href = "http://www.kirwaninstitute.osu.edu/reports/2012/05_2012_PugetSoundOppMapping.pdf"> <i>Equity, Opportunity, and Sustainability in the Central Puget Sound Region</i></a>.</p>
+
+		<div class="center">
+			<a href="https://saschu-uwt.github.io/portfolio/"><button class="button button1">Back to Portfolio</button></a>
+		</div>
+
+		<script src = "config.js"></script>
+
+	</body>
+</html>
