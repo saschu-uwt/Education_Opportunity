@@ -14,8 +14,23 @@
 
 		<!-- link to leaflet legend library, one of four steps to embed the legend -->
 		<script src= "https://cdn.jsdelivr.net/npm/leaflet-legend@1.0.2/leaflet-legend.min.js"></script>
-	</head>
 
+		<!-- Link to the default extent button's css file -->
+		<link rel="stylesheet" href="dist/leaflet.defaultextent.css" />
+
+		<!-- Load Esri Leaflet from CDN -->
+		<script src="https://unpkg.com/esri-leaflet@2.4.1/dist/esri-leaflet.js"
+		integrity="sha512-xY2smLIHKirD03vHKDJ2u4pqeHA7OQZZ27EjtqmuhDguxiUvdsOuXMwkg16PQrm9cgTmXtoxA6kwr8KBy3cdcw=="
+		crossorigin=""></script>
+
+		<!-- Load Esri Leaflet Geocoder from CDN -->
+		<link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.3.3/dist/esri-leaflet-geocoder.css"
+			integrity="sha512-IM3Hs+feyi40yZhDH6kV8vQMg4Fh20s9OzInIIAc4nx7aMYMfo+IenRUekoYsHZqGkREUgx0VvlEsgm7nCDW9g=="
+			crossorigin="">
+		<script src="https://unpkg.com/esri-leaflet-geocoder@2.3.3/dist/esri-leaflet-geocoder.js"
+			integrity="sha512-HrFUyCEtIpxZloTgEKKMq4RFYhxjJkCiF5sDxuAokklOeZ68U2NPfh4MFtyIVWlsKtVbK5GD2/JzFyAfvT5ejA=="
+			crossorigin=""></script>
+	</head>
 	<body>
 		<h1>Educational Opportunity in King County</h1>
 
@@ -37,6 +52,8 @@
 			<a href="https://saschu-uwt.github.io/portfolio/"><button class="button button1">Back to Portfolio</button></a>
 		</div>
 
+		<!-- Calls the default extent button -->
+		<script src="dist/leaflet.defaultextent.js"></script>
 		<script src = "config.js"></script>
 
 	</body>
