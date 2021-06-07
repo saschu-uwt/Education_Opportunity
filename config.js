@@ -2,8 +2,23 @@
 var mymap = L.map('map', {
   center: [47.425, -121.849],
   zoom: 9,
+  minZoom: 9,
+  defaultExtentControl: true,
 });
 
+// Geocoding!
+var bounds = L.latLngBounds([47.0, -122.7],[47.8, -121.0]);
+var searchControl = L.esri.Geocoding.geosearch({
+  useMapBounds: false,
+  searchBounds: bounds
+}).addTo(mymap);
+var results = L.layerGroup().addTo(mymap);
+searchControl.on('results', function (data) {
+  results.clearLayers();
+  for (var i = data.results.length - 1; i >= 0; i--) {
+      results.addLayer(L.marker(data.results[i].latlng));
+    }
+})
 
 // Map layers. Composite starts as the basemap
 var composite = L.tileLayer(
